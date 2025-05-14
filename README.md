@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to the Ohio State University</title>
 </head>
 <body>
 <h1>Welcome to the Ohio State University</h1>
