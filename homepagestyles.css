@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -37,8 +41,13 @@ body {
 
 .sidebar a {
   color: white;
-  text-decoration: none;
+  transition: 0.3s ease;
   font-weight: bold;
+}
+
+.sidebar a:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
 }
 
 .sidebar a:hover {
@@ -46,7 +55,7 @@ body {
 }
 
 /* main layout */
-main {
+.container {
   display: flex;
   padding: 1.25rem; /* 20px */
   background-color: white;
@@ -103,7 +112,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  main {
+  .container {
     flex-direction: column;
     align-items: center;
   }
