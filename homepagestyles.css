@@ -1,3 +1,4 @@
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +18,26 @@ body {
   flex-direction: column;
 }
 
+/* Page Layout */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack header/content/footer vertically */
+  min-height: 100vh;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1; /* Allow it to grow and push footer to bottom */
+  padding: 1.25rem; /* 20px */
+  background-color: white;
+  gap: 1.25rem; /* 20px */
+}
+
 /* Sidebar Styles */
 .sidebar {
   width: 200px;
   background-color: #bb0000;
-  padding: 1.25rem; /* 20px */
+  padding: 1.25rem;
   color: white;
   flex-shrink: 0;
 }
@@ -54,29 +70,21 @@ body {
   text-decoration: underline;
 }
 
-/* main layout */
-.container {
-  display: flex;
-  padding: 1.25rem; /* 20px */
-  background-color: white;
-  flex: 1;
-  gap: 1.25rem; /* 20px */
-}
-
+/* Content Area */
 .content-area {
   margin-left: 1.25rem; /* 20px */
   max-width: 800px;
+  flex: 1;
 }
 
-/* Restrict ul margin to content area only */
 .content-area ul {
-  margin-left: 1.25rem; /* 20px */
-  margin-bottom: 1.25rem; /* 20px */
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 main h1 {
   color: #bb0000;
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
 }
 
 main img {
@@ -92,7 +100,7 @@ main img {
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  margin-top: 1.25rem; /* 20px */
+  margin-top: 1.25rem;
 }
 
 .video-container iframe {
@@ -104,15 +112,19 @@ main img {
   border: 0;
 }
 
+/* Footer */
 footer {
   background-color: #666666;
   color: white;
   text-align: center;
   padding: 0.625rem 0; /* 10px */
+  width: 100%;
+  margin-top: auto; /* Push footer to bottom */
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .container {
+  .main-layout {
     flex-direction: column;
     align-items: center;
   }
@@ -135,7 +147,7 @@ footer {
 
   .content-area {
     margin-left: 0;
-    margin-top: 1.25rem; /* 20px */
+    margin-top: 1.25rem;
     padding: 0 0.625rem; /* 10px */
   }
 
