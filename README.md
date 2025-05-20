@@ -27,7 +27,7 @@ I built this website after completing an Intro to Programming course through We 
 </ul>
 <h2>Challenges & Learning</h2>
 <ul>
-</li>Implementing a sidebar that remains fixed on the left for desktop and adapts on smaller screens
+</li>Implementing a sidebar that remains fixed on the left for desktop and adapts on smaller screens</ul>
 
 <li>Positioning the footer correctly so it stays at the bottom of the viewport</li>
 
