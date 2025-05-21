@@ -207,12 +207,6 @@ footer {
   color: #bb0000;
 }
 
-/* Specific spacing for "How Much is My Out of Pocket Cost?" */
-h2#out-of-pocket-cost {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-}
-
 /* Reduce space between all h2 and their following p */
 h2 + p {
   margin-top: 0.25rem;
