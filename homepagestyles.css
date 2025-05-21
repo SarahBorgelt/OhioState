@@ -82,15 +82,29 @@ body {
   margin-bottom: 1.25rem;
 }
 
-main h1 {
+main h1, main h2, main h3 {
   color: #bb0000;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem; /* More space below headings */
+  padding-top: 0.5rem;   /* Padding above headings */
+}
+
+main p {
+  margin-bottom: 1rem; /* Spacing between paragraphs */
+  padding-left: 0.3rem; /* Optional: slight indent */
 }
 
 main img {
   border: 4px solid #666666;
   max-width: 100%;
   height: auto;
+  margin-bottom: 1.5rem; /* space below image */
+}
+
+/* Table cell padding */
+table th,
+table td {
+  padding: 0.75rem 1rem; /* Add padding inside table cells */
+  text-align: left;
 }
 
 /* Responsive embedded video */
@@ -169,14 +183,16 @@ footer {
 
 #calculator form label {
   display: block;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem; /* Increased spacing between label and input */
   font-weight: bold;
+  padding-left: 0.2rem; /* small left padding */
 }
 
 #calculator input[type="number"] {
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.6rem; /* Increased padding inside inputs */
   margin-top: 0.3rem;
+  margin-bottom: 1.2rem; /* Space between inputs */
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
