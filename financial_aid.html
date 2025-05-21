@@ -70,17 +70,26 @@
           How Much is My Out of Pocket Cost?
           </h2>
           <div id="calculator">
-          <form id="aidForm">
-            <label>Tuition ($USD): <input type="number" id="tuition"></label><br>
-            <label>Grants & Scholarships ($USD): <input type="number" id="grants"></label><br>
-            <label>Loans ($USD): <input type="number" id="loans"></label><br>
-            <label>Work Study $USD: <input type="number" id="workstudy"></label><br>
-            <label>Other Costs ($USD): <input type="number" id="other"></label><br>
-            <button type="button" onclick="calculateAid()">Calculate Out-of-Pocket Cost</button>
-          </form>
-          
-          <h3 id="result"></h3>
-          </div>
+  <form id="aidForm">
+    <label for="tuition">Tuition ($USD):</label>
+    <input type="number" id="tuition" name="tuition" placeholder="Enter tuition amount" />
+
+    <label for="grants">Grants & Scholarships ($USD):</label>
+    <input type="number" id="grants" name="grants" placeholder="Enter grants/scholarships" />
+
+    <label for="loans">Loans ($USD):</label>
+    <input type="number" id="loans" name="loans" placeholder="Enter loans" />
+
+    <label for="workstudy">Work Study ($USD):</label>
+    <input type="number" id="workstudy" name="workstudy" placeholder="Enter work-study amount" />
+
+    <label for="other">Other Costs ($USD):</label>
+    <input type="number" id="other" name="other" placeholder="Enter other costs" />
+
+    <button type="button" onclick="calculateAid()">Calculate Out-of-Pocket Cost</button>
+  </form>
+  <h3 id="result"></h3>
+</div>
       </main>
       </div>
       </div>
