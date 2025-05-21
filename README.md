@@ -1,41 +1,53 @@
-<h1>Ohio State University Website</h1>
-<h2>Overview</h2>
-This is a multi-page responsive website for Ohio State University, created as part of a beginner web development project. The site features a sidebar navigation menu, content sections with images and embedded videos, and a consistent footer across all pages.
+<h1>Ohio State University Web Portal</h1>
+<p></p>Welcome to the Ohio State University web portal! This site provides prospective and current students with essential information about admissions, campus life, financial aid, and contact resources.</p>
 
-Project Background
-I built this website after completing an Intro to Programming course through We Can Code IT. This project helped me apply foundational HTML and CSS skills, including layout design with Flexbox, responsive design techniques, and semantic HTML5 structure.
-
-<h2>Features</h2>
+<h2>📘 Overview</h2>
+<p>This project is a static website designed to offer a user-friendly interface for exploring key aspects of Ohio State University. It includes:</p>
 <ul>
-<li>Responsive sidebar navigation that adjusts for mobile and desktop screen sizes</li>
+<li>Admissions: Information on application processes, deadlines, and requirements.</li>
 
-<li>Multiple content pages: Homepage, Admissions, Campus Life, Financial Aid, and Contact Us</li>
+<li>Campus Life: Insights into student organizations, housing, dining, and more.</li>
 
-<li>Embedded YouTube videos and images to enrich content</li>
+<li>Financial Aid: Details on tuition, scholarships, and financial planning tools.</li>
 
-<li>Consistent header, footer, and styling across all pages</li>
-
-<li>Use of semantic HTML tags for better accessibility and SEO</li>
+<li>Contact Us: Easy access to university contact information and support.</li>
 </ul>
 
-<h2>Technologies Used</h2>
+<h2>🧰 Technologies Used</h2>
 <ul>
-  <li>HTML5</li>
-<li>CSS3 (Flexbox, Media Queries)</li>
+<li><strong>HTML5:</strong> Structuring content and ensuring semantic markup.</li>
 
-<li>Responsive Design Principles</li>
-</ul>
-<h2>Challenges & Learning</h2>
-<ul>
-<li>Implementing a sidebar that remains fixed on the left for desktop and adapts on smaller screens</li>
+<li><strong>CSS3:</strong> Styling the website with a responsive design.</li>
 
-<li>Positioning the footer correctly so it stays at the bottom of the viewport</li>
-
-<li>Using semantic HTML tags to improve site structure and accessibility</li>
-
-<li>Embedding responsive videos that maintain aspect ratio across devices</li>
+<li><strong>JavaScript:</strong> Enhancing interactivity, particularly in the financial aid calculator.</li>
 </ul>
 
-<h2>How to View</h2>
-The live website is hosted on GitHub Pages and can be viewed here:
-https://sarahborgelt.github.io/Ohio-State/
+<h2>🔧 Features</h2>
+<ul>
+<li><strong>Responsive Design:</strong> Optimized for both desktop and mobile devices.</li>
+
+<li><strong>Interactive Calculator:</strong> Helps estimate out-of-pocket costs for students.</li>
+
+<li><strong>Accessible Navigation:</strong> Clear and consistent menu for easy site navigation.</li>
+</ul>
+<h2>🚀 Getting Started</h2>
+<p>To view the website:</p>
+<ol>
+<li>Visit the live site: https://sarahborgelt.github.io/Ohio-State/</li>
+
+<li>Navigate through the sections using the sidebar menu.</li>
+</ol>
+
+<p>To contribute:</p>
+<ol>
+<li>Fork this repository.</li>
+
+<li>Clone your fork locally.</li>
+
+<li>Make your changes.</li>
+
+<li>Submit a pull request for review.</li>
+</ol>
+
+<h2>About Me:</h2>
+<p>For more information about me, please check out my LinkedIn page at https://www.linkedin.com/in/sarahborgelt/</p>
