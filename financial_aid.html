@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OSU Financial Aid</title>
+  <link rel="stylesheet" href="homepagestyles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="container">
+    <div class="main-layout">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="campus_life.html">Campus Life</a></li>
+          <li><a href="financial_aid.html" aria-current="page">Financial Aid</a></li>
+          <li><a href="contact_form.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="content-area">
+        <main>
+          <img src="https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiostatebuckeyes.com%2Fimages%2F2023%2F7%2F19%2FThe-Tradition.jpg&type=webp">
+          <h1>Student Financial Aid</h1>
+          <h2>What is the Cost of Attendance for Freshman?</h2>
+          <table border = "1">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Direct Costs</th>
+              <th>Indirect Costs</th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <th>Tution & Fees</th>
+                <td>$13,640</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <th>Living Expenses: Housing & Food</th>
+                <td>$15,178</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <th>Books, Supplies, & Equipment</th>
+                <td>$0</td>
+                <td>$1,020</td>
+              </tr>
+              <tr>
+                <th>Miscellaneous Personal Expenses</th>
+                <td>$0</td>
+                <td>$2,686</td>
+              </tr>
+              <tr>
+                <th>Transportation</th>
+                <td>$0</td>
+                <td>$732</td>
+              </tr>
+              <tr>
+                <th>Federal Student Loan Fees</th>
+                <td>$0</td>
+                <td>$40</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <h2>
+          How Much is My Out of Pocket Cost?
+          </h2>
+          <div id="calculator">
+          <form id="aidForm">
+            <label>Tuition ($USD): <input type="number" id="tuition"></label><br>
+            <label>Grants & Scholarships ($USD): <input type="number" id="grants"></label><br>
+            <label>Loans ($USD): <input type="number" id="loans"></label><br>
+            <label>Work Study $USD: <input type="number" id="workstudy"></label><br>
+            <label>Other Costs ($USD): <input type="number" id="other"></label><br>
+            <button type="button" onclick="calculateAid()">Calculate Out-of-Pocket Cost</button>
+          </form>
+          
+          <h3 id="result"></h3>
+          </div>
+      </main>
+      </div>
+      </div>
+
+<footer>
+  <p>&copy; 2025 - Courtesy of the Ohio State University</p>
+</footer>
+
+<script src="calculator.js"></script>
+</body>
+</html>
+          
