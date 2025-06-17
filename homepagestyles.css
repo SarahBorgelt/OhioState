@@ -216,5 +216,13 @@ h2 + p {
 /* Add space between lines on index page */
 .list-of-programs {
   padding-top: 1em;
+  padding-bottom: 0.5em;
 }
+
+/* Add space using div to headers */
+.header-spacing {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+  
   
