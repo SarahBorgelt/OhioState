@@ -212,3 +212,9 @@ h2 + p {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
 }
+
+/* Add space between lines on index page */
+.list-of-programs {
+  padding-top: 1em;
+}
+  
