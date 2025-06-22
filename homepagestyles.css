@@ -209,7 +209,7 @@ footer {
 
 /* Reduce space between all h2 and their following p */
 h2 + p {
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   margin-bottom: 1rem;
 }
 
@@ -224,5 +224,6 @@ h2 + p {
   padding-top: 1em;
   padding-bottom: 0.5em;
 }
-  
-  
+
+h2 {
+  padding-top: 1em;
