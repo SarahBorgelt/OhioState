@@ -1,53 +1,44 @@
-<h1>Ohio State University Web Portal</h1>
-<p></p>Welcome to the Ohio State University web portal! This site provides prospective and current students with essential information about admissions, campus life, financial aid, and contact resources.</p>
+# 🎓 Ohio State University Web Portal
 
-<h2>📘 Overview</h2>
-<p>This project is a static website designed to offer a user-friendly interface for exploring key aspects of Ohio State University. It includes:</p>
-<ul>
-<li>Admissions: Information on application processes, deadlines, and requirements.</li>
+Welcome to the **Ohio State University web portal!** This site provides prospective and current students with essential information about admissions, campus life, financial aid, and contact resources.
 
-<li>Campus Life: Insights into student organizations, housing, dining, and more.</li>
+---
 
-<li>Financial Aid: Details on tuition, scholarships, and financial planning tools.</li>
+## 📘 Overview
 
-<li>Contact Us: Easy access to university contact information and support.</li>
-</ul>
+This project is a static website designed to offer a user-friendly interface for exploring key aspects of Ohio State University. It includes:
 
-<h2>🧰 Technologies Used</h2>
-<ul>
-<li><strong>HTML5:</strong> Structuring content and ensuring semantic markup.</li>
+- **Admissions:** Application processes, deadlines, and requirements.
+- **Campus Life:** Student organizations, housing, dining, and social opportunities.
+- **Financial Aid:** Tuition info, scholarships, and an interactive cost calculator.
+- **Campus Weather & Map:** Live weather and an interactive map using Google Maps API.
+- **Contact Us:** A simple contact form to reach the university.
 
-<li><strong>CSS3:</strong> Styling the website with a responsive design.</li>
+---
 
-<li><strong>JavaScript:</strong> Enhancing interactivity, particularly in the financial aid calculator.</li>
-</ul>
+## 🧰 Technologies Used
 
-<h2>🔧 Features</h2>
-<ul>
-<li><strong>Responsive Design:</strong> Optimized for both desktop and mobile devices.</li>
+- **HTML5** – Semantic structure
+- **CSS3** – Custom styling with responsive layout
+- **JavaScript** – Interactivity and form logic
+- **Google Maps JavaScript API** – For the embedded campus map
+- **OpenWeatherMap API** – To display current weather in Columbus, OH
 
-<li><strong>Interactive Calculator:</strong> Helps estimate out-of-pocket costs for students.</li>
+---
 
-<li><strong>Accessible Navigation:</strong> Clear and consistent menu for easy site navigation.</li>
-</ul>
-<h2>🚀 Getting Started</h2>
-<p>To view the website:</p>
-<ol>
-<li>Visit the live site: https://sarahborgelt.github.io/Ohio-State/</li>
+## 🔧 Features
 
-<li>Navigate through the sections using the sidebar menu.</li>
-</ol>
+- **Responsive Design** – Mobile-friendly layout for all screen sizes
+- **Sidebar Navigation** – Clean and accessible navigation across all pages
+- **Financial Aid Calculator** – Estimate total cost based on tuition, housing, and aid
+- **Live Weather Integration** – Pulls real-time weather data for the OSU campus
+- **Interactive Google Map** – Highlights campus location and helps with orientation
 
-<p>To contribute:</p>
-<ol>
-<li>Fork this repository.</li>
+---
 
-<li>Clone your fork locally.</li>
+## 🚀 Getting Started
 
-<li>Make your changes.</li>
+### 📍 View the Website
 
-<li>Submit a pull request for review.</li>
-</ol>
-
-<h2>About Me:</h2>
-<p>For more information about me, please check out my LinkedIn page at https://www.linkedin.com/in/sarahborgelt/</p>
+Visit the live site:  
+👉 [https://sarahborgelt.github.io/OSU-Website/](https://sarahborgelt.github.io/Ohio-State/)

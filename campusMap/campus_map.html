@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>OSU Campus Map & Weather</title>
+     <link rel="stylesheet" href="../homepagestyles.css">
+</head>
+<body>
+<div class="container">
+    <div class="main-layout">
+     <nav class="sidebar">
+        <ul>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../admissions/admissions.html">Admissions</a></li>
+          <li><a href="../campus_life/campus_life.html">Campus Life</a></li>
+          <li><a href="../financial_aid/financial_aid.html">Financial Aid</a></li>
+          <li><a href="../campusMap/campus_map.html" aria-current="page">Campus Weather & Map</a></li>
+          <li><a href="../contact_form/contact_form.html">Contact Us</a></li>
+        </ul>
+      </nav>
+     <div class="content-area">
+          <h1 class="map-spacing">OSU Weather & Campus Map</h1>
+               <div class="weather-spacing"></div>
+               <div id="weather"></div>
+          <main>
+               <div class="spacing"></div>
+               <div id="map"></div>
+               <script src="campusMap.js"></script>
+               <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD27b0sDZkTa5P-rsNkMZBbIXYdSHkVs3Y&callback=initMap" async defer></script>
+          </main>
+     </div>
+     </div>
+     </div>
+<footer>
+      <p>&copy; 2025 - Courtesy of the Ohio State University</p>
+</footer>
+</body>
+</html>

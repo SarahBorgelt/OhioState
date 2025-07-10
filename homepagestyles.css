@@ -10,12 +10,15 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   background-color: #f4f4f4;
   color: #212121;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
 }
 
 /* Page Layout */
@@ -40,6 +43,7 @@ body {
   padding: 1.25rem;
   color: white;
   flex-shrink: 0;
+  border-radius: 8px;
 }
 
 .sidebar nav {
@@ -84,11 +88,10 @@ body {
 
 main h1 {
   color: #bb0000;
-  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
 }
 
 main img {
-  border: 4px solid #666666;
   max-width: 100%;
   height: auto;
 }
@@ -128,7 +131,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .sidebar {
     width: 100%;
     text-align: center;
@@ -148,12 +151,16 @@ footer {
   .content-area {
     margin-left: 0;
     margin-top: 1.25rem;
-    padding: 0 0.625rem; /* 10px */
+    padding: 0 1rem; 
   }
 
   main img {
     width: 100%;
     max-width: 500px;
+  }
+
+  table, th, td {
+    font-size: 0.9rem;
   }
 }
 
@@ -221,9 +228,203 @@ h2 + p {
 
 /* Add space using div to headers */
 .header-spacing {
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding-top: 1rem;
 }
 
 h2 {
   padding-top: 1em;
+}
+
+/* Campus map page styling */
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#weather {
+  padding-top: 1em;
+}
+
+.map-spacing{
+  padding-top: 1em;
+}
+
+.spacing {
+  padding-bottom: 2em;
+}
+
+/* weather page styling */
+.weather-card{
+  max-width: 400px;
+  margin: auto;
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.weather-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #bb0000;
+  outline: none;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form button[type="submit"] {
+  background-color: #bb0000;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover,
+form button[type="submit"]:focus {
+  background-color: #990000;
+  outline: none;
+}
+
+/* Updating financial aid table styling */
+
+table {
+  wdith: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #bb0000;
+  color: white;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td{
+  border-bottom: none;
+}
+
+#calculator {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 500px;
+}
+
+#calculator form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#calculator input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+#calculator:focus{
+  border-color: #bb0000;
+  outline: none;
+}
+
+#calculator button{
+  padding: 0.75rem;
+  background-color: #bb0000;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#calculator button:hover{
+  background-color: #990000;
+}
+
+.space{
+  padding-bottom: 1rem;
+}
+
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.program-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  flex: 1 1 250px; /* Responsive sizing */
+  max-width: 300px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+}
+
+.program-cards a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+img {
+  border-radius: 4px;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../homepagestyles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="container">
+    <div class="main-layout">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../admissions.html">Admissions</a></li>
+          <li><a href="../campus_life.html">Campus Life</a></li>
+          <li><a href="../financial_aid.html">Financial Aid</a></li>
+          <li><a href="../campusMap/campus_map.html">Campus Weather & Map</a></li>
+          <li><a href="../contact_form/contact_form.html" aria-current="page">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="content-area">
+        <main>
+          <img src="https://i.ytimg.com/vi/BlPDCG8M5bQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBxAPlHUdWuxH2QuRmF66pEwDRLlw" alt="People coming together on campus with the OSU banner." />
+
+          <section id="contact">
+            <div class="header-spacing">
+              <h2>Contact Ohio State University Admissions</h2>
+            </div>
+            <p>For all admissions inquiries, please contact the Ohio State University Admissions Office:</p>
+            <div class="space"></div>
+            <form id="admissions" action="https://formspree.io/f/mgvygkgw" method="POST">
+              <label for="first-name">What is your first name?</label>
+              <input id="first-name" name="first-name" type="text" placeholder="First Name" required autocomplete="given-name">
+
+              <label for="last-name">What is your last name?</label>
+              <input id="last-name" name="last-name" type="text" placeholder="Last Name" required autocomplete="family-name">
+
+              <label for="phone-number">What is your phone number</label>
+              <input id="phone-number" name="phone-number" type="tel" placeholder="Ex: 419-783-4181" autocomplete="tel">
+
+              <label for="email-address">What is your email address?</label>
+              <input id="email-address" name="email-address" type="email" placeholder="Ex: joe.holder@gmail.com" autocomplete="email">
+
+              <label for="assistance">How can we assist you today?</label>
+              <textarea id="assistance" name="assistance" placeholder="Please enter your questions here."></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div> <!-- end main-layout -->
+
+    <footer>
+      <p>&copy; 2025 - Courtesy of the Ohio State University</p>
+    </footer>
+  </div> <!-- end container -->
+</body>
+</html>

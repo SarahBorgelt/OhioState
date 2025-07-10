@@ -15,5 +15,5 @@ function calculateAid() {
   const netCost = totalCost - totalAid;
 
   const resultElement = document.getElementById("result");
-  resultElement.textContent = `Your estimated out-of-pocket cost is: $${netCost.toFixed(2)}`;
+  resultElement.textContent = `Your estimated out-of-pocket cost is: $${netCost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
