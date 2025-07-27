@@ -1,7 +1,8 @@
-require('dotenv').config();
+equire('dotenv').config();
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 app.use(cors());
@@ -11,9 +12,12 @@ const PORT = process.env.PORT || 5000;
 const WeatherAPI = process.env.WeatherAPI;
 const GoogleMapsAPI = process.env.GoogleMapsAPI;
 
-// Root route
+// Serve static files from Public/Frontend
+app.use(express.static(path.join(__dirname, 'Public', 'Frontend')));
+
+// Root route (optional, since frontend will serve index.html)
 app.get('/', (req, res) => {
-  res.send('Hello from the backend!');
+  res.sendFile(path.join(__dirname, 'Public', 'Frontend', 'index.html'));
 });
 
 // Weather endpoint
@@ -43,6 +47,11 @@ app.get('/weather', async (req, res) => {
 // Google Maps API key endpoint
 app.get('/apikey', (req, res) => {
   res.json({ key: GoogleMapsAPI });
+});
+
+// Catch-all route to serve frontend index.html (for client-side routing or refresh)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Public', 'Frontend', 'index.html'));
 });
 
 app.listen(PORT, () => {
