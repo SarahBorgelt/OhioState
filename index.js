@@ -1,17 +1,20 @@
 require('dotenv').config();
 const express = require('express');
-const axios = require('axios');  // Fixed import here
+const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
 app.use(cors());
 
-// Use Heroku's port or 5000 locally
 const PORT = process.env.PORT || 5000;
 
-// Match your actual env var names here
 const WeatherAPI = process.env.WeatherAPI;
 const GoogleMapsAPI = process.env.GoogleMapsAPI;
+
+// Root route
+app.get('/', (req, res) => {
+  res.send('Hello from the backend!');
+});
 
 // Weather endpoint
 app.get('/weather', async (req, res) => {
@@ -37,7 +40,7 @@ app.get('/weather', async (req, res) => {
   }
 });
 
-// Endpoint to securely send Google Maps API key to frontend
+// Google Maps API key endpoint
 app.get('/apikey', (req, res) => {
   res.json({ key: GoogleMapsAPI });
 });

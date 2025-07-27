@@ -2,9 +2,10 @@ const osuCoords = { lat: 40.0076, lng: -83.0309 };
 const weatherDiv = document.getElementById('weather');
 
 // Change this to your backend base URL (set dynamically or hardcoded for production)
-const backendBaseURL = window.location.hostname === 'localhost' 
-  ? 'http://localhost:5000' 
-  : 'https://osuwebsite.herokuapp.com';
+const backendBaseURL = 
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') 
+    ? 'http://localhost:5000' 
+    : 'https://osuwebsite.herokuapp.com';
 
 // Load Google Maps script dynamically after fetching the key from backend
 async function loadGoogleMaps() {
