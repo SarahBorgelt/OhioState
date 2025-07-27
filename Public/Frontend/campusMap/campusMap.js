@@ -5,7 +5,7 @@ const weatherDiv = document.getElementById('weather');
 const backendBaseURL = 
   (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') 
     ? 'http://localhost:5000' 
-    : 'https://osuwebsite.herokuapp.com';
+    : 'https://osuwebsite-9314a874767a.herokuapp.com';
 
 // Load Google Maps script dynamically after fetching the key from backend
 async function loadGoogleMaps() {
