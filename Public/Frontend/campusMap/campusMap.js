@@ -1,10 +1,15 @@
 const osuCoords = { lat: 40.0076, lng: -83.0309 };
 const weatherDiv = document.getElementById('weather');
 
+// Change this to your backend base URL (set dynamically or hardcoded for production)
+const backendBaseURL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:5000' 
+  : 'https://osuwebsite.herokuapp.com';
+
 // Load Google Maps script dynamically after fetching the key from backend
 async function loadGoogleMaps() {
   try {
-    const response = await fetch('http://localhost:5000/apikey');
+    const response = await fetch(`${backendBaseURL}/apikey`);
     const data = await response.json();
     const googleMapsKey = data.key;
 
@@ -33,7 +38,7 @@ window.initMap = function () {
 
 // Fetch and display weather data from backend
 function loadWeather() {
-  fetch(`http://localhost:5000/weather?lat=${osuCoords.lat}&lon=${osuCoords.lng}`)
+  fetch(`${backendBaseURL}/weather?lat=${osuCoords.lat}&lon=${osuCoords.lng}`)
     .then((response) => response.json())
     .then((data) => {
       const temp = data.main.temp;
