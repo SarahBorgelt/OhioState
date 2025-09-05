@@ -68,11 +68,6 @@ This project is a full-stack web application that displays the Ohio State Univer
    - Running a local server, or
    - Opening the `index.html` file directly.
 
-## Deployment
-The app is deployed on **Heroku**.
-
-🔗 **Live App**: [https://osuwebsite-9314a874767a.herokuapp.com](https://osuwebsite-9314a874767a.herokuapp.com)
-
 ## Technologies Used
 - Node.js & Express.js  
 - Axios for HTTP requests  
