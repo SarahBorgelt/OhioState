@@ -38,24 +38,24 @@ This project is a web application that displays the Ohio State University campus
 
 ## Installation
 
-1. Clone the repository:
+**1. Clone the repository:**
    ```bash
    git clone https://github.com/SarahBorgelt/OhioState.git
    ```
 
-2. Update the `.env` file in the backend root with your API keys:
+**2. Update the `.env` file in the backend root with your API keys:**
    ```
    WeatherAPI=your_openweather_api_key
    GoogleMapsAPI=your_google_maps_api_key
    ```
 
-3. Start the application:
+**3. Start the application:**
 
 - **macOS/Linux:** Double-click the start-mac-or-linux.command file in the project folder to launch the app in a terminal.
 
 - **Windows:** Double-click the start-windows.bat file to launch the app.
 
-4. The app will start on http://localhost:5000
+**4. The app will start on http://localhost:5000**
 
 ## Technologies Used
 - Node.js & Express.js  
